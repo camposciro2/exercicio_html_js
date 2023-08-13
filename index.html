@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário de Reserva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="title-container">
+    <h1>Planeje Suas Férias Perfeitas</h1>
+    <p>Escolha as datas e reserve o seu quarto agora</p>
+</div>
+
+<div class="form-container">
+    <form id="reservaForm">
+        <label for="dataCheckin">Data de Check-in:</label>
+        <input type="date" id="dataCheckin" name="dataCheckin"><br><br>
+
+        <label for="dataCheckout">Data de Check-out:</label>
+        <input type="date" id="dataCheckout" name="dataCheckout"><br><br>
+
+        <p id="mensagem" style="text-align: center;"></p>
+
+        <input type="submit" value="Reservar">
+
+        <p id="reservaInfo" style="text-align: center;"></p>
+    </form>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

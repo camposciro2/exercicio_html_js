@@ -1,0 +1,114 @@
+body {
+    background-image: url('midia/atlantis-dubai2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body::before {
+    content: ""; /* Pseudo-elemento requer a propriedade content, mesmo que vazia */
+    display: block;
+    position: fixed; /* Fixa a sobreposição na janela */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5); /* Sobreposição branca com 50% de opacidade */
+    pointer-events: none; /* Permite interações através da sobreposição */
+    z-index: -1; /* Posiciona atrás do conteúdo */
+}
+
+/* ... Outros estilos ... */
+
+.title-container {
+    text-align: center;
+    padding: 25px 0;
+    background: linear-gradient(to bottom, white, #5292e7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.title-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: white; /* Texto branco para contraste */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.title-container p {
+    font-size: 1.2rem;
+    color: white; /* Texto branco para contraste */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* ... Outros estilos ... */
+
+
+form {
+    background: linear-gradient(to bottom, white, #5292e7);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 400px; /* Ou qualquer outra largura que você desejar */
+    margin: 0 auto;
+}
+
+#reservaForm {
+    margin-top: 100px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Isso assegura que o padding não afete a largura total do input */
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Isso assegura que o padding não afete a largura total do botão */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+p#mensagem {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#mensagem, #reservaInfo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#reservaInfo {
+    font-size: 1.2em;
+}
+
+.mensagem-valida {
+    font-weight: bold;
+    font-size: 1.2em; /* Ajuste esse valor conforme a necessidade */
+}
